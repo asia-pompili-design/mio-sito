@@ -1,0 +1,166 @@
+/* Impostazioni generali */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+}
+
+/* Header */
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    background-color: white;
+}   
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 70%;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+/* Hero */
+.hero {
+    height: 360px;
+    background-color: #2f2f2f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .subtitle {
+    font-size: 18px; 
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* About */
+.about-text {
+    padding: 80px;
+}
+
+.about-text h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 25px 0;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 300;
+}
+
+.about-photo {
+    height: 450px;
+    overflow: hidden;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0%;
+}
+
+/* Università */
+.universita {
+    background-color: #f5f5f5;
+}
+
+.universita .about-text {
+    padding: 80px;
+}
+
+.universita .about-text h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 25px 0;
+}
+
+.universita .about-text p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 300;
+}
+
+.universita .about-photo {
+    height: 450px;
+    overflow: hidden;
+}
+
+.universita .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Progetti */
+.progetti {
+    background-color: #d9d9d9;
+    padding: 100px 60px;
+    text-align: center;
+}
+
+.progetti h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2f2f2f;
+    margin: 0 0 40px 0;
+}
+
+.progetti p {
+    font-size: 25px;
+    line-height: 1.3;
+    color: #2f2f2f;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    font-weight: 300;
+}
+
+.progetti a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.progetti a:hover {
+    text-decoration: underline;
+}
