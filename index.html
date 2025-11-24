@@ -20,9 +20,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Formazione</a></li>
-                <li><a href="#">Progetti</a></li>
-                <li><a href="#">Contatti</a></li>
+                <li><a href="#formazione" class="nav-link">Formazione</a></li>
+                <li><a href="#progetti" class="nav-link">Progetti</a></li>
+                <li><a href="#contatti" class="nav-link">Contatti</a></li>
             </ul>
         </nav>
     </header>
@@ -61,7 +61,7 @@
     </section>
 
     <!-- UNIVERSITÀ -->
-    <section class="universita">
+    <section class="universita" id="formazione">
         <div class="container-fluid">
             <div class="row g-0">
                 <div class="col-md-6">
@@ -86,7 +86,7 @@
     </section>
     
     <!-- PROGETTI -->
-    <section class="progetti">
+    <section class="progetti" id="progetti">
         <div class="container">
             <h2>Progetti</h2>
             <p>
@@ -98,5 +98,136 @@
         </div>
     </section>
 
+    <!-- GALLERIA PROGETTI -->
+    <section class="galleria-progetti">
+        <div class="container-fluid px-0">
+            <div class="row g-0">
+                <!-- Progetto 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="progetto-card">
+                        <div class="progetto-img">
+                            <img src="img/img3.png" alt="Vortex">
+                        </div>
+                        <div class="progetto-info">
+                            <h3>Vortex-Corso di Geometria</h3>
+                            <p>Modello in forex che, tramite piani sovrapposti e disposti in spirale, evoca la dinamica di un vortice come simbolo di trasformazione ed equilibrio.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progetto 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="progetto-card">
+                        <div class="progetto-img">
+                            <img src="img/img6.png" alt="NuovAstoria">
+                        </div>
+                        <div class="progetto-info">
+                            <h3>NuovAstoria-Corso di Comunicazione</h3>
+                            <p>Progetto di identità visiva che rinnova l'immagine dell'ex Cinema Astoria di Rimini, che ne reinterpreta l'eredità attraverso una estetica grafica contemporanea.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progetto 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="progetto-card">
+                        <div class="progetto-img">
+                            <img src="img/img4.png" alt="HatBag">
+                        </div>
+                        <div class="progetto-info">
+                            <h3>HatBag-Corso di Design del Prodotto</h3>
+                            <p>Accessorio ibrido in feltro che combina le funzioni di cappello e borsa, dotato di chiusura interna e catenella, rielabora in chiave sperimentale il rapporto tra forma e funzione.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progetto 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="progetto-card">
+                        <div class="progetto-img">
+                            <img src="img/img5.png" alt="Paraschiena">
+                        </div>
+                        <div class="progetto-info">
+                            <h3>Paraschiena-Corso di Modellazione 3D</h3>
+                            <p>Paraschiena per l'equitazione progettato con il programma Rhinoceros, pensato per garantire protezione e comfort attraverso una forma ergonomica e un design tecnico e funzionale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contatti">
+        <div class="footer-content">
+            <h3>Contatti</h3>
+            <div class="footer-icon">
+                <a href="mailto:tuoemail@example.com">
+                    <img src="img/logo2.png" alt="Contatti Email">
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <span>—</span>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT PER NAVIGAZIONE -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section[id], footer[id]');
+            
+            // Click sui link
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Rimuovi classe active da tutti
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    
+                    // Aggiungi active al link cliccato
+                    this.classList.add('active');
+                    
+                    // Scroll alla sezione
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Highlight automatico durante lo scroll
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (window.pageYOffset >= (sectionTop - 150)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
