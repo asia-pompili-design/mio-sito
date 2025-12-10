@@ -324,6 +324,72 @@ nav a.active::after {
     color: #1a1a1a;
 }
 
+/* Responsive */
+@media (max-width: 1199px) {
+    .progetto-info {
+        padding: 25px 20px 30px 20px;
+    }
+    
+    .progetto-info h3 {
+        font-size: 15px;
+    }
+    
+    .progetto-info p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .progetto-img {
+        padding-bottom: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+/* Carosello mobile */
+    .carousel-slide {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .progetto-card {
+        min-width: 100%;
+        width: 100%;
+        flex: none;
+    }
+    
+    .carousel-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .progetto-img {
+        padding-bottom: 75%;
+    }
+    
+    .progetto-info {
+        padding: 20px 18px 25px 18px;
+    }
+    
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .progetto-img {
+        padding-bottom: 85%;
+    }
+    
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #f5f5f5;
@@ -389,61 +455,4 @@ footer {
 
 .footer-links span {
     color: #1a1a1a;
-}
-
-/* Responsive */
-@media (max-width: 1199px) {
-    .progetto-info {
-        padding: 25px 20px 30px 20px;
-    }
-    
-    .progetto-info h3 {
-        font-size: 15px;
-    }
-    
-    .progetto-info p {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 991px) {
-    .progetto-img {
-        padding-bottom: 70%;
-    }
-}
-
-@media (max-width: 768px) {
-    .carousel-arrow {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-    }
-
-    .carousel-slide {
-        gap: 10px;
-    }
-    
-    .progetto-img {
-        padding-bottom: 65%;
-    }
-    
-    .progetto-info {
-        padding: 20px 18px 25px 18px;
-    }
-    
-    .col-md-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-
-@media (max-width: 576px) {
-    .progetto-img {
-        padding-bottom: 85%;
-    }
-    
-    .col-md-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
 }
