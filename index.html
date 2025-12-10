@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Pompili Asia 1</title>
+    <title>Portfolio Pompili Asia</title>
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,12 +98,15 @@
         </div>
     </section>
 
-    <!-- GALLERIA PROGETTI -->
+    <!-- GALLERIA PROGETTI - CAROSELLO -->
     <section class="galleria-progetti">
-        <div class="container">
-            <div class="row g-0">
-                <!-- Progetto 1 -->
-                <div class="col-md-6 col-lg-3">
+        <div class="carousel-container">
+            <button class="carousel-arrow left" id="prevBtn">‹</button>
+            <button class="carousel-arrow right" id="nextBtn">›</button>
+            
+            <div class="carousel-wrapper" id="carouselWrapper">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
                     <div class="progetto-card">
                         <div class="progetto-img">
                             <img src="img/img3.png" alt="Vortex">
@@ -113,10 +116,7 @@
                             <p>Modello in forex che, tramite piani sovrapposti e disposti in spirale, evoca la dinamica di un vortice come simbolo di trasformazione ed equilibrio.</p>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Progetto 2 -->
-                <div class="col-md-6 col-lg-3">
+                    
                     <div class="progetto-card">
                         <div class="progetto-img">
                             <img src="img/img6.png" alt="NuovAstoria">
@@ -126,10 +126,7 @@
                             <p>Progetto di identità visiva che rinnova l'immagine dell'ex Cinema Astoria di Rimini, che ne reinterpreta l'eredità attraverso una estetica grafica contemporanea.</p>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Progetto 3 -->
-                <div class="col-md-6 col-lg-3">
+                    
                     <div class="progetto-card">
                         <div class="progetto-img">
                             <img src="img/img4.png" alt="HatBag">
@@ -139,10 +136,7 @@
                             <p>Accessorio ibrido in feltro che combina le funzioni di cappello e borsa, dotato di chiusura interna e catenella, rielabora in chiave sperimentale il rapporto tra forma e funzione.</p>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Progetto 4 -->
-                <div class="col-md-6 col-lg-3">
+                    
                     <div class="progetto-card">
                         <div class="progetto-img">
                             <img src="img/img5.png" alt="Paraschiena">
@@ -150,6 +144,52 @@
                         <div class="progetto-info">
                             <h3>Paraschiena-Corso di Modellazione 3D</h3>
                             <p>Paraschiena per l'equitazione progettato con il programma Rhinoceros, pensato per garantire protezione e comfort attraverso una forma ergonomica e un design tecnico e funzionale.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="progetto-card">
+                        <div class="progetto-img">
+                            <img src="img/img7.JPG" alt="Progetto 5">
+                        </div>
+                        <div class="progetto-info">
+                            <h3>Cortometraggio-Corso di Fotografia</h3>
+                            <p>Cortometraggio dedicato al racconto generazionale. Attraverso immagini fotografiche e 
+                                linguaggio video abbiamo costruito un dialogo visivo che intreccia memoria, emozione e contemporaneità.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="progetto-card">
+                        <div class="progetto-img">
+                            <img src="img/img8.jpeg" alt="Progetto 6">
+                        </div>
+                        <div class="progetto-info">
+                            <h3>Bestiario-Laboratorio di Serigrafia </h3>
+                            <p>Libro sugli animali con la tecnica della serigrafia, curando sia le illustrazioni che il processo di stampa, 
+                                ne abbiamo prodotte 20 copie e abbiamo anche realizzato la rilegatura a mano.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="progetto-card">
+                        <div class="progetto-img">
+                            <img src="img/img9.jpeg" alt="Progetto 7">
+                        </div>
+                        <div class="progetto-info">
+                            <h3>Patchat-Laboratorio di Prodotto</h3>
+                            <p>Cappello di cartone, rivestito con carta colorata, che funziona come una piccola lampada grazie a una luce integrata. L’idea, ispirata a Patch Adams, 
+                                vuole trasmettere conforto e serenità, come una luce che accompagna i bambini nel sonno.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="progetto-card">
+                        <div class="progetto-img">
+                            <img src="img/img10.jpeg" alt="Progetto 8">
+                        </div>
+                        <div class="progetto-info">
+                            <h3>Sedicesimo-Storia del Design</h3>
+                            <p>Descrizione dell'ottavo progetto. Sostituisci con il contenuto reale.</p>
                         </div>
                     </div>
                 </div>
@@ -177,27 +217,20 @@
         </div>
     </footer>
 
-    <!-- JAVASCRIPT PER NAVIGAZIONE -->
+    <!-- JAVASCRIPT -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Navigazione header
             const navLinks = document.querySelectorAll('.nav-link');
             const sections = document.querySelectorAll('section[id], footer[id]');
             
-            // Click sui link
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
-                    
-                    // Rimuovi classe active da tutti
                     navLinks.forEach(l => l.classList.remove('active'));
-                    
-                    // Aggiungi active al link cliccato
                     this.classList.add('active');
-                    
-                    // Scroll alla sezione
                     const targetId = this.getAttribute('href');
                     const targetSection = document.querySelector(targetId);
-                    
                     if (targetSection) {
                         targetSection.scrollIntoView({
                             behavior: 'smooth',
@@ -207,19 +240,14 @@
                 });
             });
             
-            // Highlight automatico durante lo scroll
             window.addEventListener('scroll', function() {
                 let current = '';
-                
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    
                     if (window.pageYOffset >= (sectionTop - 150)) {
                         current = section.getAttribute('id');
                     }
                 });
-                
                 navLinks.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href') === '#' + current) {
@@ -227,6 +255,35 @@
                     }
                 });
             });
+
+            // Carosello
+            const wrapper = document.getElementById('carouselWrapper');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentSlide = 0;
+            const totalSlides = document.querySelectorAll('.carousel-slide').length;
+
+            function updateCarousel() {
+                wrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === totalSlides - 1;
+            }
+
+            nextBtn.addEventListener('click', function() {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    updateCarousel();
+                }
+            });
+
+            prevBtn.addEventListener('click', function() {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateCarousel();
+                }
+            });
+
+            updateCarousel();
         });
     </script>
 </body>
