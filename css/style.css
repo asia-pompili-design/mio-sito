@@ -83,39 +83,7 @@ nav a.active::after {
     background-color: #d32f2f;
 }
 
-/* Hamburger menu - nascosto su desktop */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1001;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: #1a1a1a;
-    margin: 3px 0;
-    transition: 0.3s;
-    display: block;
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-/* Menu mobile - nascosto su desktop */
+/* Menu mobile */
 .mobile-menu {
     display: none;
     position: fixed;
@@ -159,7 +127,6 @@ nav a.active::after {
     color: #d32f2f;
 }
 
-/* Previeni scroll quando menu è aperto */
 body.menu-open {
     overflow: hidden;
 }
@@ -526,13 +493,13 @@ footer {
         padding: 0 15px;
     }
     
-    /* Logo più piccolo su mobile */
+    /* Logo su mobile */
     .logo {
         width: 50px;
         height: 50px;
     }
     
-    /* Menu più compatto */
+    /* Menu mobile */
     nav ul {
         gap: 20px;
     }
@@ -541,17 +508,7 @@ footer {
         font-size: 16px;
     }
     
-    /* Nascondi hamburger su mobile */
-    .hamburger {
-        display: none !important;
-    }
-    
-    /* Nascondi menu mobile */
-    .mobile-menu {
-        display: none !important;
-    }
-    
-    /* Padding ridotto per Chi sono e Università */
+    /* Padding per Chi sono e Università */
     .about-text {
         padding: 40px 40px;
     }
@@ -560,7 +517,7 @@ footer {
         padding: 40px 40px;
     }
     
-    /* Testo a bandiera sinistra per Progetti */
+    /* Testo per Progetti */
     .progetti {
         text-align: left;
     }

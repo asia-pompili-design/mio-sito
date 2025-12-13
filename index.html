@@ -278,10 +278,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         isMobile = window.innerWidth <= 768;
         
-        // Rimuovi classe active da tutte le card
         allCards.forEach(card => card.classList.remove('active'));
         
-        // Attendi un momento per l'effetto fade-out
         setTimeout(() => {
             if (isMobile) {
                 // MOBILE: mostra 1 card alla volta
