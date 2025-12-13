@@ -538,7 +538,7 @@ footer {
     
     /* Carosello mobile */
     .galleria-progetti {
-        min-height: 620px;
+        min-height: 680px;
     }
     
     .carousel-slide {
@@ -550,7 +550,7 @@ footer {
         min-width: 100%;
         width: 100%;
         flex: none;
-        height: 570px;
+        height: 680px;
     }
     
     .carousel-arrow {
@@ -572,7 +572,7 @@ footer {
     }
     
     .progetto-info p {
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .col-md-6 {
