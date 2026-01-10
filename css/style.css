@@ -20,7 +20,7 @@ footer {
     scroll-margin-top: 100px;
 }
 
-/* Header */
+/* Header - override per mantenere layout */
 header {
     height: 100px;
     display: flex;
@@ -31,7 +31,30 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-}   
+}
+
+header .container-fluid {
+    width: 100%;
+    padding: 0;
+}
+
+header .row {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+}
+
+header .col-4,
+header .col-md-2 {
+    padding: 0;
+}
+
+header .col-8,
+header .col-md-10 {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
 
 .logo {
     width: 80px;
@@ -429,6 +452,11 @@ footer {
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
+}
+
+.footer-bottom .row {
+    width: auto;
+    margin: 0;
 }
 
 .footer-bottom p {

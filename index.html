@@ -16,23 +16,37 @@
 
     <!-- HEADER -->
     <header>
-        <div class="logo">
-            <img src="img/logo.webp" alt="Logo del sito">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-4 col-md-2">
+                    <div class="logo">
+                        <img src="img/logo.webp" alt="Logo del sito" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-8 col-md-10">
+                    <nav>
+                        <ul>
+                            <li><a href="#formazione" class="nav-link">Formazione</a></li>
+                            <li><a href="#progetti" class="nav-link">Progetti</a></li>
+                            <li><a href="#contatti" class="nav-link">Contatti</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#formazione" class="nav-link">Formazione</a></li>
-                <li><a href="#progetti" class="nav-link">Progetti</a></li>
-                <li><a href="#contatti" class="nav-link">Contatti</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- HERO -->
     <div class="hero">
-        <div class="hero-content">
-            <p class="subtitle pb-2">Profilo accademico</p>
-            <h1>Portfolio<br>Pompili Asia</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-content">
+                        <p class="subtitle pb-2">Profilo accademico</p>
+                        <h1>Portfolio<br>Pompili Asia - Design</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -54,7 +68,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="about-photo">
-                        <img src="img/img1.webp" alt="Foto di Asia Pompili">
+                        <img src="img/img1.webp" alt="Foto di Asia Pompili" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -67,7 +81,7 @@
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="about-photo">
-                        <img src="img/img2.webp" alt="Università San Marino">
+                        <img src="img/img2.webp" alt="Università San Marino" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
@@ -89,110 +103,128 @@
     <!-- PROGETTI -->
     <section class="progetti" id="progetti">
         <div class="container">
-            <h2>Progetti</h2>
-            <p>
-                Una selezione di progetti universitari che raccontano il mio approccio al design 
-                e alla progettazione digitale, esplorando il rapporto tra forma, funzione e 
-                sperimentazione materica.
-            </p>
-            <a href="https://drive.google.com/drive/folders/18vQ0yMczHQ4VRur1n4vHArqRcwks929z?usp=share_link" target="_blank"> Link</a>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Progetti</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1">
+                    <p>
+                        Una selezione di progetti universitari che raccontano il mio approccio al design 
+                        e alla progettazione digitale, esplorando il rapporto tra forma, funzione e 
+                        sperimentazione materica.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href="https://drive.google.com/drive/folders/18vQ0yMczHQ4VRur1n4vHArqRcwks929z?usp=share_link" target="_blank">Link</a>
+                </div>
+            </div>
         </div>
     </section>
 
 <!-- GALLERIA PROGETTI - CAROSELLO -->
 <section class="galleria-progetti">
-    <div class="carousel-container">
-        <button class="carousel-arrow left" id="prevBtn">‹</button>
-        <button class="carousel-arrow right" id="nextBtn">›</button>
-        
-        <div class="carousel-wrapper" id="carouselWrapper">
-            <div class="carousel-slide">
-                <!-- Card 1 -->
-                <div class="progetto-card">
-                    <div class="progetto-img">
-                        <img src="img/img3.webp" alt="Vortex">
-                    </div>
-                    <div class="progetto-info">
-                        <h3>Vortex-Corso di Geometria</h3>
-                        <p>Modello in forex che, tramite piani sovrapposti e disposti in diverse spirali, evoca la dinamica di un vortice come simbolo di trasformazione ed equilibrio.</p>
-                    </div>
-                </div>
-                
-                <!-- Card 2 -->
-                <div class="progetto-card">
-                    <div class="progetto-img">
-                        <img src="img/img6.webp" alt="NuovAstoria">
-                    </div>
-                    <div class="progetto-info">
-                        <h3>NuovAstoria-Corso di Comunicazione</h3>
-                        <p>Progetto di identità visiva che rinnova l'immagine dell'ex Cinema Astoria di Rimini, che ne reinterpreta l'eredità attraverso una estetica grafica contemporanea.</p>
-                    </div>
-                </div>
-                
-                <!-- Card 3 -->
-                <div class="progetto-card">
-                    <div class="progetto-img">
-                        <img src="img/img4.webp" alt="HatBag">
-                    </div>
-                    <div class="progetto-info">
-                        <h3>HatBag-Corso di Design del Prodotto</h3>
-                        <p>Accessorio ibrido in feltro che combina le funzioni di cappello e borsa, dotato di chiusura interna e catenella, rielabora in chiave sperimentale il rapporto tra forma e funzione.</p>
-                    </div>
-                </div>
-                
-                <!-- Card 4 -->
-                <div class="progetto-card">
-                    <div class="progetto-img">
-                        <img src="img/img5.webp" alt="Paraschiena">
-                    </div>
-                    <div class="progetto-info">
-                        <h3>Paraschiena-Corso di Modellazione 3D</h3>
-                        <p>Paraschiena per l'equitazione progettato con il programma Rhinoceros, pensato per garantire protezione e comfort attraverso una forma ergonomica e un design tecnico e funzionale.</p>
-                    </div>
-                </div>
-                
-                <!-- Card 5 -->
-                <div class="progetto-card">
-                    <div class="progetto-img">
-                        <img src="img/img7.webp" alt="Cortometraggio">
-                    </div>
-                    <div class="progetto-info">
-                        <h3>Cortometraggio-Corso di Fotografia</h3>
-                        <p>Cortometraggio dedicato al racconto generazionale. Attraverso immagini fotografiche e linguaggio video abbiamo costruito un dialogo visivo che intreccia memoria, emozione e contemporaneità.</p>
-                    </div>
-                </div>
-                
-                <!-- Card 6 -->
-                <div class="progetto-card">
-                    <div class="progetto-img">
-                        <img src="img/img8.webp" alt="Bestiario">
-                    </div>
-                    <div class="progetto-info">
-                        <h3>Bestiario-Laboratorio di Serigrafia</h3>
-                        <p>Libro sugli animali con la tecnica della serigrafia, curando sia le illustrazioni che il processo di stampa, ne abbiamo prodotte 20 copie e abbiamo anche realizzato la rilegatura a mano.</p>
-                    </div>
-                </div>
-                
-                <!-- Card 7 -->
-                <div class="progetto-card">
-                    <div class="progetto-img">
-                        <img src="img/img9.webp" alt="Patchat">
-                    </div>
-                    <div class="progetto-info">
-                        <h3>Patchat-Laboratorio di Prodotto</h3>
-                        <p>Cappello di cartone e carta colorata, che funziona come una piccola lampada grazie a una luce integrata, ispirata a Patch Adams, vuole trasmettere conforto e serenità per accompagna i bambini nel sonno.</p>
-                    </div>
-                </div>
-                
-                <!-- Card 8 -->
-                <div class="progetto-card">
-                    <div class="progetto-img">
-                        <img src="img/img10.webp" alt="Sedicesimo">
-                    </div>
-                    <div class="progetto-info">
-                        <h3>Sedicesimo-Corso di Storia del Design</h3>
-                        <p>Sedicesimo dedicato all’azienda Teenage Engineering, analizzandone filosofia, 
-                            approccio al design e alcuni dei prodotti più emblematici, per comprenderne l’impatto nel panorama contemporaneo.</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="carousel-container">
+                    <button class="carousel-arrow left" id="prevBtn">‹</button>
+                    <button class="carousel-arrow right" id="nextBtn">›</button>
+                    
+                    <div class="carousel-wrapper" id="carouselWrapper">
+                        <div class="carousel-slide">
+                            <!-- Card 1 -->
+                            <div class="progetto-card">
+                                <div class="progetto-img">
+                                    <img src="img/img3.webp" alt="Vortex" class="img-fluid">
+                                </div>
+                                <div class="progetto-info">
+                                    <h3>Vortex-Corso di Geometria</h3>
+                                    <p>Modello in forex che, tramite piani sovrapposti e disposti in diverse spirali, evoca la dinamica di un vortice come simbolo di trasformazione ed equilibrio.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 2 -->
+                            <div class="progetto-card">
+                                <div class="progetto-img">
+                                    <img src="img/img6.webp" alt="NuovAstoria" class="img-fluid">
+                                </div>
+                                <div class="progetto-info">
+                                    <h3>NuovAstoria-Corso di Comunicazione</h3>
+                                    <p>Progetto di identità visiva che rinnova l'immagine dell'ex Cinema Astoria di Rimini, che ne reinterpreta l'eredità attraverso una estetica grafica contemporanea.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 3 -->
+                            <div class="progetto-card">
+                                <div class="progetto-img">
+                                    <img src="img/img4.webp" alt="HatBag" class="img-fluid">
+                                </div>
+                                <div class="progetto-info">
+                                    <h3>HatBag-Corso di Design del Prodotto</h3>
+                                    <p>Accessorio ibrido in feltro che combina le funzioni di cappello e borsa, dotato di chiusura interna e catenella, rielabora in chiave sperimentale il rapporto tra forma e funzione.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 4 -->
+                            <div class="progetto-card">
+                                <div class="progetto-img">
+                                    <img src="img/img5.webp" alt="Paraschiena" class="img-fluid">
+                                </div>
+                                <div class="progetto-info">
+                                    <h3>Paraschiena-Corso di Modellazione 3D</h3>
+                                    <p>Paraschiena per l'equitazione progettato con il programma Rhinoceros, pensato per garantire protezione e comfort attraverso una forma ergonomica e un design tecnico e funzionale.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 5 -->
+                            <div class="progetto-card">
+                                <div class="progetto-img">
+                                    <img src="img/img7.webp" alt="Cortometraggio" class="img-fluid">
+                                </div>
+                                <div class="progetto-info">
+                                    <h3>Cortometraggio-Corso di Fotografia</h3>
+                                    <p>Cortometraggio dedicato al racconto generazionale. Attraverso immagini fotografiche e linguaggio video abbiamo costruito un dialogo visivo che intreccia memoria, emozione e contemporaneità.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 6 -->
+                            <div class="progetto-card">
+                                <div class="progetto-img">
+                                    <img src="img/img8.webp" alt="Bestiario" class="img-fluid">
+                                </div>
+                                <div class="progetto-info">
+                                    <h3>Bestiario-Laboratorio di Serigrafia</h3>
+                                    <p>Libro sugli animali con la tecnica della serigrafia, curando sia le illustrazioni che il processo di stampa, ne abbiamo prodotte 20 copie e abbiamo anche realizzato la rilegatura a mano.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 7 -->
+                            <div class="progetto-card">
+                                <div class="progetto-img">
+                                    <img src="img/img9.webp" alt="Patchat" class="img-fluid">
+                                </div>
+                                <div class="progetto-info">
+                                    <h3>Patchat-Laboratorio di Prodotto</h3>
+                                    <p>Cappello di cartone e carta colorata, che funziona come una piccola lampada grazie a una luce integrata, ispirata a Patch Adams, vuole trasmettere conforto e serenità per accompagna i bambini nel sonno.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 8 -->
+                            <div class="progetto-card">
+                                <div class="progetto-img">
+                                    <img src="img/img10.webp" alt="Sedicesimo" class="img-fluid">
+                                </div>
+                                <div class="progetto-info">
+                                    <h3>Sedicesimo-Corso di Storia del Design</h3>
+                                    <p>Sedicesimo dedicato all'azienda Teenage Engineering, analizzandone filosofia, 
+                                        approccio al design e alcuni dei prodotti più emblematici, per comprenderne l'impatto nel panorama contemporaneo.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -202,19 +234,31 @@
 
     <!-- FOOTER -->
     <footer id="contatti">
-        <div class="footer-content">
-            <h3>Contatti</h3>
-            <div class="footer-icon">
-                <a href="mailto:asiapompili4@gmail.com">
-                    <img src="img/logo2.webp" alt="Contatti Email">
-                </a>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2024</p>
-                <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <span>—</span>
-                    <a href="#">Cookies</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content">
+                        <h3>Contatti</h3>
+                        <div class="footer-icon">
+                            <a href="mailto:asiapompili4@gmail.com">
+                                <img src="img/logo2.webp" alt="Contatti Email" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-auto">
+                                    <p>© 2026</p>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="footer-links">
+                                        <a href="#">Privacy</a>
+                                        <span>—</span>
+                                        <a href="#">Cookies</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
